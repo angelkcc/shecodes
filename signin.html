@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css" integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container img {
+            height: 20px;
+            margin: 10px;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .container .form-group {
+            margin-bottom: 20px;
+        }
+        .container .btn-primary {
+            background-color: black;
+            border: none;
+            font-size: 16px;
+        }
+        .container .btn-primary:hover {
+            background-color: #333;
+        }
+        .container .links {
+            font-size: 12px;
+            margin-top: 20px;
+        }
+        .container .links a {
+            color: #555;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="ff-tnr">
+    <div class="container">
+        <img src="nike.png" alt="Nike Logo">
+        <img src="Jordan.png" alt="Jordan Logo">
+        <h1>Enter your email to join us or sign in.</h1>
+        <div>
+            <p>Nepal <a href="#">Change</a></p>
+        </div>
+        <form action="#">
+            <div class="form-group">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-4 d-flex ">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+
+                    </div>
+                 </div>
+                </div>
+            <button type="submit" class="btn btn-primary btn-block">Continue</button>
+        </form>
+        <div class="links">
+            <p>By continuing, I agree to Nike's <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
