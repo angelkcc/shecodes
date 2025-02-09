@@ -1,7 +1,11 @@
-.container{
 
-    width:100%;   
+.navbar 
+{
+  position:fixed;
+  left: 0;
+  width: 100%;
 }
+
   .footer {
     position: absolute;
       bottom: 0;
