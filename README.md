@@ -9,6 +9,8 @@ This project is an agricultural e-commerce platform designed to help farmers pur
 - *Frontend:* HTML, CSS, JavaScript
 - *Frameworks & Libraries:* Bootstrap (for responsive UI)
 - *APIs & Plugins:* Google Maps API (for locating nearby agricultural stores)
+- Backend: Node.js,Express.js
+- Database: Mongodb
 - *Version Control:* Git & GitHub
 
 ## Features
@@ -66,4 +68,4 @@ This project is an agricultural e-commerce platform designed to help farmers pur
 - Enhancing *chat support for real-time consultancy*
 
 ## Conclusion
-This agricultural website serves as a comprehensive solution for farmers, combining an online marketplace with expert consultancy services. Built with *HTML, CSS, JavaScript, and Bootstrap*, the platform enhances accessibility to quality farming inputs while fostering a knowledge-sharing ecosystem.
+This agricultural website serves as a comprehensive solution for farmers, combining an online marketplace with expert consultancy services. Built with *HTML, CSS, JavaScript, node.js, express.js and mongo.db*, the platform enhances accessibility to quality farming inputs while fostering a knowledge-sharing ecosystem.
