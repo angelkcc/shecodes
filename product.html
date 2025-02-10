@@ -185,6 +185,80 @@
           <button id="close-cart-btn">Close</button>
         </div>
       </div>
+      <script>document.addEventListener("DOMContentLoaded", async function () {
+        const productList = document.querySelector(".productlist");
+    
+        try {
+            const response = await fetch("http://localhost:3000/product");
+            const products = await response.json();
+    
+            // Clear existing static products
+            productList.innerHTML = "";
+    
+            products.forEach(product => {
+                const productCard = document.createElement("div");
+                productCard.classList.add("product-card");
+                
+                productCard.innerHTML = `
+                    <img src="${product.url}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p class="price">NPR ${product.price}</p>
+                    <button class="add-to-cart" data-product="${product.name}" data-price="${product.price}">Add to Cart</button>
+                `;
+    
+                productList.appendChild(productCard);
+            });
+        } catch (error) {
+            console.error("Error fetching products:", error);
+        }
+    
+        // Cart Functionality
+        const cart = [];
+        document.addEventListener("click", function (event) {
+            if (event.target.classList.contains("add-to-cart")) {
+                const productName = event.target.getAttribute("data-product");
+                const productPrice = parseFloat(event.target.getAttribute("data-price"));
+                
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ name: productName, price: productPrice, quantity: 1 });
+                }
+    
+                updateCart();
+            }
+        });
+    
+        function updateCart() {
+            const cartBtn = document.getElementById("cart-btn");
+            const cartModal = document.getElementById("cart-modal");
+            const cartItemsContainer = document.getElementById("cart-items");
+            const totalPriceContainer = document.getElementById("total-price");
+    
+            cartItemsContainer.innerHTML = "";
+            let total = 0;
+    
+            cart.forEach(item => {
+                total += item.price * item.quantity;
+                const listItem = document.createElement("li");
+                listItem.textContent = `${item.name} x${item.quantity} - NPR ${item.price * item.quantity}`;
+                cartItemsContainer.appendChild(listItem);
+            });
+    
+            totalPriceContainer.textContent = `Total: NPR ${total}`;
+            cartBtn.textContent = `🛒 Cart (${cart.reduce((sum, item) => sum + item.quantity, 0)})`;
+        }
+    
+        document.getElementById("cart-btn").addEventListener("click", function () {
+            document.getElementById("cart-modal").style.display = "block";
+        });
+    
+        document.getElementById("close-cart-btn").addEventListener("click", function () {
+            document.getElementById("cart-modal").style.display = "none";
+        });
+    });
+    </script>
   
 </body>
 </html>

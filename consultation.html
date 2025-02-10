@@ -20,7 +20,7 @@
     <div class="container-fluid grey-back">
         <div class="container-fluid">
             <div class="container p-0">
-                <div class="row ">
+                <div class="row">
                     <div class="col-6 p-0 d-flex float-start p-1">
                         <div class="logo-agri">
                             <img src="pictures/ae (2).png" class="w-100">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-6">
                         <div class="col-12">
-                            <div class="sec-menu ">
+                            <div class="sec-menu">
                                 <ul class="d-flex align-content-center list-unstyled mb-0 fw-bold py-2">
                                     <a href="home.html" class="site-sec-menu">
                                         <li>Home</li>
@@ -123,49 +123,7 @@
        
         <!-- Card section -->
         <div class="row mt-5">
-            <div class="col-4">
-                <div class="card card-set card-hover c-h-358">
-                    <div class="card-icon">
-                        <div class="img-border">
-                            <img src="pictures/1person.jpg" class="fed-img d-block mx-auto ">
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="text-center fs-4 fw-bold"> Intern John Doe</p>
-                        <p>Plant and fertilizer specialist | Undergrad at HICAST</p>
-                        <button class="btn btn-primary book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal">View Profile</button> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card card-set card-hover c-h-358">
-                    <div class="card-icon">
-                        <div class="img-border">
-                            <img src="pictures/p2.jpg" class="fed-img d-block mx-auto ">
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="text-center fs-4 fw-bold">Intern Ram Tiwari</p>
-                        <p>Expertise in plant growth| Undergrad at HICAST</p>
-                        <button class="btn btn-primary book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal">View Profile</button> 
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card card-set card-hover c-h-358">
-                    <div class="card-icon">
-                        <div class="img-border">
-                            <img src="pictures/p3.jpg" class="fed-img d-block mx-auto ">
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <p class="text-center fs-4 fw-bold">Intern Derek Lee</p>
-                        <p>Specilaist in compost manure and plant care | Undergrad at HICAST</p>
-                        <a  href="interndetails.css"><button class="btn btn-primary book-btn" data-bs-toggle="modal" data-bs-target="#bookingModal">View Profile</button></a>
-                    </div>
-                </div>
-            </div>
-            
+            <div class="consultant-list" id="consultant-list"></div>
         </div>
     </main>
    
@@ -188,7 +146,47 @@
                 autoplaySpeed: 3000
             });
         });
+
+        // Fetch user data from the API
+        async function fetchUsers() {
+            try {
+                const response = await fetch("http://localhost:3000/user");
+                const users = await response.json(); // Convert response to JSON
+
+                // Get the container where consultants should be displayed
+                const consultantContainer = document.getElementById("consultant-list");
+                consultantContainer.innerHTML = ""; // Clear any existing content
+
+                // Loop through each user and create a card dynamically
+                users.forEach(user => {
+                    const consultantCard = document.createElement("div");
+                    consultantCard.classList.add("col-4");
+
+                    consultantCard.innerHTML = `
+                        <div class="card card-set card-hover c-h-358">
+                            <div class="card-icon">
+                                <div class="img-border">
+                                    <img src="https://plus.unsplash.com/premium_photo-1738980401923-c84c558e96b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjE3fHxhdmF0YXJzfGVufDB8fDB8fHww" class="fed-img d-block mx-auto">
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="text-center fs-4 fw-bold">${user.name}</p>
+                                <p>${user.qualification} </p>
+                            </div>
+                        </div>
+                    `;
+
+                    // Append the new consultant card to the container
+                    consultantContainer.appendChild(consultantCard);
+                });
+
+            } catch (error) {
+                console.error("Error fetching users:", error);
+            }
+        }
+
+        // Call the function when the page loads
+        document.addEventListener("DOMContentLoaded", fetchUsers);
     </script>
-    
 </body>
 </html>

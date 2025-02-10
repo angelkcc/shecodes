@@ -183,6 +183,9 @@ border-radius: 50px;
   border-radius: 15px;
   padding: 20px;
 }
+.card{
+  width: 280px;
+}
 .fed-img {
   width: 100px;
   height: 100px;
@@ -232,4 +235,10 @@ hr{
 .interndet{
   text-decoration: none;
   
+}
+.consultant-list{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+ 
 }
