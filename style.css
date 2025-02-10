@@ -1,4 +1,162 @@
-.ff-tnr{
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .sectiona {
+    padding: 50px 20px;
+}
+.contact-btn {
+    margin-top: 20px;
+}
+.footer
+{
+    position: fixed;
+}
+.sectiona{
+    background-color:rgb(66, 196, 66);
+    text-align: center;
+    color:white;
+
+}
+.logo{
+    width: 700px;
+    height: auto;
+}
+.row{
+    color: black
+}
+.containerlogin3{
+    color:black;
+}
+ /*login page/signin page*/
+.ff-trn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.container img {
+    height: 20px;
+    margin: 10px;
+}
+.container h1 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+.container .form-group {
+    margin-bottom: 20px;
+}
+.container .btn-primary {
+    background-color: black;
+    border: none;
+    font-size: 16px;
+}
+.container .btn-primary:hover {
+    background-color: #333;
+}
+.container .links {
+    font-size: 12px;
+    margin-top: 20px;
+}
+.container .links a {
+    color: #555;
+    text-decoration: none;
+}
+  
+  /* Header */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Carousel */
+  .carousel {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .intern {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .intern img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #4CAF50;
+  }
+  
+  .intern h3 {
+    color: #333;
+  }
+  
+  .intern p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* View Profile Button */
+  .view-profile {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .view-profile:hover {
+    background: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+  }.ff-tnr{
     font-family: 'Times New Roman', Times, serif;
 }
     .grey-back{
