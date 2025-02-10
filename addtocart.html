@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQs - Loyalty Program</title>
-    <link rel="stylesheet" href="style.css"></link>
-    <link rel="stylesheet" href="faq.css"></link>
+    <title>Add to Cart</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css"
-        integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
 </head>
-<body class="ff-tnr">
+<body>
     <div class="container-fluid grey-back">
         <div class="container-fluid">
             <div class="container p-0">
                 <div class="row ">
                     <div class="col-6 p-0 d-flex float-start p-1">
                         <div class="logo-agri">
-                            <img src="pictures/ae.png" class="w-100">
+                            <img src="pictures/ae (2).png" class="w-100">
                         </div>
                     </div>
                     <div class="col-6 p-0">
@@ -33,12 +30,12 @@
                                 <li>Help</li>
                             </a>
                             <li class="site-top-menu">|</li>
-                            <a href="signin.html" class="site-top-menu">
+                            <a href="#" class="site-top-menu">
                                 <li>Join Us</li>
                             </a>
                             <li class="site-top-menu">|</li>
-                            <a href="login.html" class="site-top-menu">
-                                <li>Sign In
+                            <a href="#" class="site-top-menu">
+                                <li>Sign In</Inp>
                                 </li>
                             </a>
                         </ul>
@@ -65,13 +62,13 @@
                                     <a href="aboutus.html" class="site-sec-menu">
                                         <li>About Us</li>
                                     </a>
-                                    <a href="product.html" class="site-sec-menu">
+                                    <a href="buy.html" class="site-sec-menu">
                                         <li>Products</li>
                                     </a>
                                     <a href="consultation.html" class="site-sec-menu">
                                         <li>Consultant</li>
                                     </a>
-                                    <a href="#" class="site-sec-menu">
+                                    <a href="contactus.html" class="site-sec-menu">
                                         <li>Contact us</li>
                                     </a>
                                     <a href="loyalty.html" class="site-sec-menu">
@@ -106,35 +103,118 @@
                     </div>
                 </div>
             </div>
+        </div>  
+    
+
+     <!----cart items details--->
+    <div class="small-container cart-page mb-5">
+
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="5.png">
+                        <div>
+                            <p>Air Jordan</p>
+                            <small>Price: Rs 20,000</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs 20,000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="11.jpg">
+                        <div>
+                            <p>Dunks</p>
+                            <small>Price: Rs 15,000</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs 20,000</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="3.jpg">
+                        <div>
+                            <p>Blazer</p>
+                            <small>Price: Rs 22,000</small><br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>Rs 22,000</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rs 57,000</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rs 1000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rs 58,000</td>
+                </tr>
+            </table>
+         </div>
+         <div class="row">
+            <div class="col-12 d-flex justify-content-end">
+              
+                     <!-- Button trigger modal -->
+            <button type="button" class="shopbtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Shop
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Buy Now</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Do you want to place this order?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="shopbtn1" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="shopbtn2">Place Order</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
         </div>
-<body class="bodyFAQ">
-    <div class="containerFAQ">
-        <h1>Frequently Asked Questions (FAQs)</h1>
-        
-        <div class="faq-item">
-            <p class="questionFAQ">1. How do I sign up for the Loyalty Program?</p>
-            <p class="answerFAQ">You can sign up by clicking the 'Sign Up' button on our homepage and filling out the registration form.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="questionFAQ">2. How do I earn points?</p>
-            <p class="answerFAQ">Points are earned with every purchase of seeds, fertilizers, or consultations. The more you spend, the more points you accumulate.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="questionFAQ">3. How can I redeem my points?</p>
-            <p class="answerFAQ">You can redeem points through your user dashboard by selecting available rewards.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="questionFAQ">4. Do my points expire?</p>
-            <p class="answerFAQ">Points are valid for 12 months from the date they are earned.</p>
-        </div>
-        
-        <div class="faq-item">
-            <p class="questionFAQ">5. Can I transfer my points to someone else?</p>
-            <p class="answerFAQ">Currently, points are non-transferable and can only be used by the account holder.</p>
+
+
+            </div>
         </div>
     </div>
+    <hr>
+</div>
 </body>
 </html>
