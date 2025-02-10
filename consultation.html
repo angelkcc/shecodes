@@ -4,13 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consultation</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="consultation.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
-    <header>
+    <div class="container-fluid grey-back">
+        <div class="container-fluid">
+            <div class="container p-0">
+                <div class="row ">
+                    <div class="col-6 p-0 d-flex float-start p-1">
+                        <div class="logo-agri">
+                            <img src="pictures/ae (2).png" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <ul class="d-flex list-unstyled float-end mb-0 p-2 fw-bold">
+                            <a href="#" class="site-top-menu">
+                                <li>Find a Store</li>
+                            </a>
+                            <li class="site-top-menu">|</li>
+                            <a href="#" class="site-top-menu">
+                                <li>Help</li>
+                            </a>
+                            <li class="site-top-menu">|</li>
+                            <a href="#" class="site-top-menu">
+                                <li>Join Us</li>
+                            </a>
+                            <li class="site-top-menu">|</li>
+                            <a href="#" class="site-top-menu">
+                                <li>Sign In</Inp>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid white-back py-2">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-3 p-0">
+                        <div class="logo">
+                            <img src="pictures/agritiallogo.png" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-12">
+                            <div class="sec-menu ">
+                                <ul class="d-flex align-content-center list-unstyled mb-0 fw-bold py-2">
+                                    <a href="home.html" class="site-sec-menu">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="aboutus.html" class="site-sec-menu">
+                                        <li>About Us</li>
+                                    </a>
+                                    <a href="buy.html" class="site-sec-menu">
+                                        <li>Products</li>
+                                    </a>
+                                    <a href="consultation.html" class="site-sec-menu">
+                                        <li>Consultant</li>
+                                    </a>
+                                    <a href="#" class="site-sec-menu">
+                                        <li>Contact us</li>
+                                    </a>
+                                    <a href="#" class="site-sec-menu">
+                                        <li>Loyalty</li>
+                                    </a>
+                                    <a href="#" class="site-sec-menu">
+                                        <li>FAQ's</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                                <div class="site-search-menu">
+                                    <div class="input-group rounded">
+                                        <input type="search" class="form-control rounded" placeholder="Search"
+                                            aria-label="Search" aria-describedby="search-addon" />
+                                        <span class="input-group-text border-0" id="search-addon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <i class="px-2 icon fa-regular fa-heart"></i>
+                                <a href="orderpage.html"><i
+                                        class="px-2 icon fa-solid fa-cart-shopping site-top-menu"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   <header>
         <h1>Consultation Page</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -24,28 +121,28 @@
         <!-- Carousel Section -->
         <div class="carousel">
             <div class="intern">
-                <img src="1person.jpg" alt="John Doe">
+                <img src="pictures/1person.jpg" alt="John Doe" style="justify-content: center;">
                 <h3>John Doe</h3>
                 <p>Specializes in Sustainable Farming & Crop Management.</p>
-                <a href="intern-details.html" class="view-profile">View Profile</a>
+                <a href="interndetails.html" class="view-profile">View Profile</a>
             </div>
 
             <div class="intern">
-                <img src="p2.jpg" alt="Jane Smith">
+                <img src="pictures/p2.jpg" alt="Jane Smith">
                 <h3>Jane Smith</h3>
                 <p>Expert in Organic Farming & Soil Health.</p>
                 <a href="jane-details.html" class="view-profile">View Profile</a>
             </div>
 
             <div class="intern">
-                <img src="p3.jpg" alt="Mike Williams"style="padding-left: 10px;">
+                <img src="pictures/p3.jpg" alt="Mike Williams"style="padding-left: 10px;">
                 <h3>Mike Williams</h3>
                 <p>Focuses on Pest Control & Agribusiness Solutions.</p>
                 <a href="mike-details.html" class="view-profile">View Profile</a>
             </div>
         </div>
     </main>
-
+   
     <footer>
         <p>&copy; 2025 AgriConnect. All rights reserved.</p>
     </footer>
@@ -66,5 +163,6 @@
             });
         });
     </script>
+    
 </body>
 </html>

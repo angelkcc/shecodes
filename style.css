@@ -35,6 +35,10 @@
         border-bottom: 2px solid #333;
         color: lightgrey;
     }
+    .footer{
+        color:lightgray;
+
+    }
     .icon{
          font-size: 18px;
     }
@@ -50,11 +54,19 @@
         display: flex;
         overflow: hidden;
         background: #f4f4f4;
+        color:black;
+        height:50px;
         padding: 10px;
         white-space: nowrap;
         animation: scrollBanner 10s linear infinite;
+        background-color: #486a49;
+
+        .items-container {
+            display: flex;
+            flex-direction: row;
+            gap:40px;
+        }
     }
-    
     .item {
         flex: 1;
         text-align: center;
@@ -340,3 +352,6 @@
     .shopbtn2:hover{
         background-color: green;
     }
+    /*---s1.css---*/
+    
+      

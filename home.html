@@ -1,104 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home page</title>
-    <link rel="stylesheet"href="home.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css"
+        integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 </head>
-<body>
-  <div class="container-fluid1 grey-back">
-    <div class="container-fluid1">
-        <div class="container p-0">
-            <div class="row ">
-                <div class="col-6 p-0 d-flex float-start p-1">
-                    <div class="logo">
-                        <img src="Jordan.png" class="w-100">
+
+<body class="ff-tnr">
+    <div class="container-fluid grey-back">
+        <div class="container-fluid">
+            <div class="container p-0">
+                <div class="row ">
+                    <div class="col-6 p-0 d-flex float-start p-1">
+                        <div class="logo-agri">
+                            <img src="pictures/ae (2).png" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-6 p-0">
+                        <ul class="d-flex list-unstyled float-end mb-0 p-2 fw-bold">
+                            <a href="#" class="site-top-menu">
+                                <li>Find a Store</li>
+                            </a>
+                            <li class="site-top-menu">|</li>
+                            <a href="#" class="site-top-menu">
+                                <li>Help</li>
+                            </a>
+                            <li class="site-top-menu">|</li>
+                            <a href="#" class="site-top-menu">
+                                <li>Join Us</li>
+                            </a>
+                            <li class="site-top-menu">|</li>
+                            <a href="#" class="site-top-menu">
+                                <li>Sign In</Inp>
+                                </li>
+                            </a>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-6 p-0">
-                    <ul class="d-flex list-unstyled float-end mb-0 p-2 fw-bold">
-                        <a href="findstore.html" class="site-top-menu"><li>Find a Store</li></a>
-                        <li class="site-top-menu">|</li>
-                        <a href="sale.html" class="site-top-menu"><li>Help</li></a>
-                        <li class="site-top-menu">|</li>
-                        <a href="sale.html" class="site-top-menu"><li>Join Us</li></a>
-                        <li class="site-top-menu">|</li>
-                        <a href="signin.html" class="site-top-menu"><li>Sign In</Inp></li></a>
-                    </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid white-back py-2">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-3 p-0">
+                        <div class="logo">
+                            <img src="pictures/agritiallogo.png" class="w-100">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="col-12">
+                            <div class="sec-menu ">
+                                <ul class="d-flex align-content-center list-unstyled mb-0 fw-bold py-2">
+                                    <a href="home.html" class="site-sec-menu">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="aboutus.html" class="site-sec-menu">
+                                        <li>About Us</li>
+                                    </a>
+                                    <a href="buy.html" class="site-sec-menu">
+                                        <li>Products</li>
+                                    </a>
+                                    <a href="consultation.html" class="site-sec-menu">
+                                        <li>Consultant</li>
+                                    </a>
+                                    <a href="#" class="site-sec-menu">
+                                        <li>Contact us</li>
+                                    </a>
+                                    <a href="#" class="site-sec-menu">
+                                        <li>Loyalty</li>
+                                    </a>
+                                    <a href="#" class="site-sec-menu">
+                                        <li>FAQ's</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-6">
+                                <div class="site-search-menu">
+                                    <div class="input-group rounded">
+                                        <input type="search" class="form-control rounded" placeholder="Search"
+                                            aria-label="Search" aria-describedby="search-addon" />
+                                        <span class="input-group-text border-0" id="search-addon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <i class="px-2 icon fa-regular fa-heart"></i>
+                                <a href="orderpage.html"><i
+                                        class="px-2 icon fa-solid fa-cart-shopping site-top-menu"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo-banner">
+            <!-- <div class="sponsored-carousel owl-carousel owl-theme text-center py-2"> -->
+            <div class="items-container">
+                <div class="item">
+                    <div>New Discounts on Seeds & Fertilizers: Up to 40% OFF</div>
+                    <div>Shop All Our Latest Deals Now!</div>
+                </div>
+                <div class="item">
+                    <div>Exclusive Offer for Farmers!<br>Get 10% OFF on your first purchase of seeds & fertilizers.
+                        Order Now!</div>
+                </div>
+                <div class="item">
+                    <div>Organic Growth Starts Here!</div>
+                    <div>pecial Discounts on Eco-friendly Fertilizers. Grab Your Deal Today!</div>
+
                 </div>
             </div>
         </div>
     </div>
-  <div>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height:60px;">
-    <di  v class="container-fluid">
-      <div class="logo"><img src="agritiallogo.png" style="width: 150px; height: 150px"></img></div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="buy.html">Shop online</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Consultant</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Get Started
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="signin.html">Sign-in</a></li>
-              <li><a class="dropdown-item" href="login.html">Log-in</a></li>
-            
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  </nav>
-</div>
-  <div class="imagecontainer">
-    <img src="https://plantsforallseasons.com/wp-content/uploads/2021/01/AdobeStock_107351606-scaled.jpeg" style="width: 100%; height: 100%"></img>
-  </div>
-
-  </div>
-      <footer class="footer">
-        <div class="containerfooter">
-          <div class="footer-about">
-            <p>We are a company dedicated to providing the best products and services to our customers. Our goal is to create value and make a difference in the community.</p>
-          </div>
-    
-    
-          <div class="footer-social-icons">
-            <div class="footer-header">
-              <h3>Follow Us</h3>
+    <div class="container mt-2 p-0">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="top-fig">
+                    <img src="pictures/2.png" class="w-100">
+                </div>
             </div>
-            
-            <div class="icons-footer">
-              <a href="#"><i class="fab fa-facebook-f">Facebook</i></a>
-              <a href="#"><i class="fab fa-twitter">Twitter</i></a>
-              <a href="#"><i class="fab fa-instagram">Instagram</i></a>
-              <a href="#"><i class="fab fa-linkedin">LinkedIn</i></a>
-            </div>
-            
-          </div>
-        
-    
-        <div class="footer-bottom">
-          <p>&copy; 2025 Agritial . All rights reserved.</p>
         </div>
-      </div>
-        </footer>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  
+        <div class="row justify-content-center mt-5">
+            <div class="col-8 text-center">
+                <h3 class="fs-5">Premium Quality Seeds & Fertilizers</h3>
+                <p class="font-s fw-bolder">GROW SMART, HARVEST MORE</p>
+                <p class="">Boost your farm's productivity with high-quality seeds and eco-friendly fertilizers. Nourish
+                    your crops for a better yield! </p>
+                <a href="#" class="button btn-outline-primary p-2 px-3">Shop</a>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <div class="row">
+            <div class="col-6">
+                <h3>Featured</h3>
+            </div>
+            <div class="col-6">
+                <div class="d-flex justify-content-end align-items-center">
+                    <button class="arrow-btn left-btn">
+                        <span class="arrow-icon btn-prev">&larr;</span>
+                    </button>
+                    <button class="arrow-btn right-btn ml-3">
+                        <span class="arrow-icon btn-next">&rarr;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3 mb-3 p-0">
+        <div class=" new-carousel owl-carousel owl-theme ">
+            <div class="item">
+                <div class="featured-img">
+                    <img src="Pictures/t1.jpg" class="w-100">
+                </div>
+                <a href="#" class="fss text-decoration-none">
+                    <p class="fs-5 mt-3">Tomato Seed</p>
+                </a>
+                <a href="#" class="fss">
+                    <p>Shop</p>
+                </a>
+            </div>
+            <div class="item">
+                <div class="featured-img">
+                    <img src="Pictures/4.jpg" class="w-100">
+                </div>
+                <a href="#" class="fss text-decoration-none">
+                    <p class="fs-5 mt-3">Wheat</p>
+                </a>
+                <a href="#" class="fss">
+                    <p>Shop</p>
+                </a>
+            </div>
+            <div class="item">
+                <div class="featured-img">
+                    <img src="Pictures/Maize-Photos.jpg" class="w-100">
+                </div>
+                <a href="#" class="fss text-decoration-none">
+                    <p class="fs-5 mt-3">Corn</p>
+                </a>
+                <a href="#" class="fss">
+                    <p>Shop</p>
+                </a>
+            </div>
+            <div class="item">
+                <div class="featured-img">
+                    <img src="Pictures/lentils-2.jpg" class="w-100">
+                </div>
+                <a href="#" class="fss text-decoration-none">
+                    <p class="fs-5 mt-3">Lentil seeds</p>
+                </a>
+                <a href="#" class="fss">
+                    <p>Shop</p>
+                </a>
+            </div>
+            <div class="item">
+                <div class="featured-img">
+                    <img src="Pictures/strawberry.png" class="w-100">
+                </div>
+                <a href="#" class="fss text-decoration-none">
+                    <p class="fs-5 mt-3">Strawberry</p>
+                </a>
+                <a href="#" class="fss">
+                    <p>Shop</p>
+                </a>
+            </div>
+            <div class="item">
+                <div class="featured-img">
+                    <img src="Pictures/Papaya-Seeds.png" class="w-100">
+                </div>
+                <a href="#" class="fss text-decoration-none">
+                    <p class="fs-5 mt-3">Papaya Seeds</p>
+                </a>
+                <a href="#" class="fss">
+                    <p>Shop</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="container mt-5 p-0 ">
+        <div class="row mt-5">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-4">
+                        <h5 class="bottom-menu-h fw-bold">Resources</h5>
+                        <ul class="list-unstyled mt-4 ">
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Find A Store</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Become A Member</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Send Us Feedback</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="bottom-menu-h fw-bold">Help</h5>
+                        <ul class="list-unstyled mt-4 ">
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Get Help</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Order Status</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Delivery</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Returns</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Payment Option</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Contact Us On Agritial.com Inquiries</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Contact Us On All Other Inquiries</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <h5 class="bottom-menu-h fw-bold">Company</h5>
+                        <ul class="list-unstyled mt-4 ">
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">About Agritial</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">News</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Careers</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Investors</li>
+                            </a>
+                            <a href="#" class="text-decoration-none bottom-menu-tg">
+                                <li class="mt-2">Sustainability</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex float-end">
+                    <i class="fa fa-globe"></i>
+                    <h5 class="bottom-menu-h fw-bold ps-2">Nepal</h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ul class="d-flex list-unstyled float-start mb-0 p-2">
+                    <li class="bottom-in">© 2025 Agritial, Inc. All rights reserved</li>
+                    <a href="#" class="bottom-in">
+                        <li>Guides</li>
+                    </a>
+                    <a href="#" class="bottom-in">
+                        <li>Terms of Sale</li>
+                    </a>
+                    <a href="#" class="bottom-in">
+                        <li>Terms of Use</Inp>
+                        </li>
+                    </a>
+                    <a href="#" class="bottom-in">
+                        <li>Agritial Privacy Policy</Inp>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="style.js"></script>
 </body>
-</html> 
+
+</html>
