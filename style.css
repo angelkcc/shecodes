@@ -498,3 +498,42 @@ body {
     .shopbtn2:hover{
         background-color: green;
     }
+    /* loyalty page*/
+    .loyalty-body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        text-align: center;
+    }
+    .loyalty-cont {
+        width: 80%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+    }
+    h1 {
+        color: #4CAF50;
+    }
+    .benefits {
+        list-style: none;
+        padding: 0;
+    }
+    .benefits li {
+        background: #e8f5e9;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .cta-button {
+        display: inline-block;
+        background: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
