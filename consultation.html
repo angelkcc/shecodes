@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="stylesheet" href="home.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <h1>Consultation Page</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="consultation.html">Consultation</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Consultants</h2>
+
+        <!-- Carousel Section -->
+        <div class="carousel">
+            <div class="intern">
+                <img src="1person.jpg" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>Specializes in Sustainable Farming & Crop Management.</p>
+                <a href="intern-details.html" class="view-profile">View Profile</a>
+            </div>
+
+            <div class="intern">
+                <img src="p2.jpg" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Expert in Organic Farming & Soil Health.</p>
+                <a href="jane-details.html" class="view-profile">View Profile</a>
+            </div>
+
+            <div class="intern">
+                <img src="p3.jpg" alt="Mike Williams"style="padding-left: 10px;">
+                <h3>Mike Williams</h3>
+                <p>Focuses on Pest Control & Agribusiness Solutions.</p>
+                <a href="mike-details.html" class="view-profile">View Profile</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AgriConnect. All rights reserved.</p>
+    </footer>
+
+    <!-- jQuery and Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+        });
+    </script>
+</body>
+</html>
